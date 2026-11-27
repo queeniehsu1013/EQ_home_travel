@@ -7,7 +7,7 @@
   if (!source || !upcoming || !past) return;
   const localDate = new Date();
   const today = [localDate.getFullYear(), String(localDate.getMonth()+1).padStart(2,'0'), String(localDate.getDate()).padStart(2,'0')].join('-');
-  const trips = Array.from(source.querySelectorAll('a.trip-tile')).filter(el => /^\\d{4}-\\d{2}-\\d{2}$/.test(el.dataset.start || '') && /^\\d{4}-\\d{2}-\\d{2}$/.test(el.dataset.end || ''));
+  const trips = Array.from(source.querySelectorAll('a.trip-tile')).filter(el => /^\d{4}-\d{2}-\d{2}$/.test(el.dataset.start || '') && /^\d{4}-\d{2}-\d{2}$/.test(el.dataset.end || ''));
   const futureTrips = trips.filter(el => el.dataset.end >= today).sort((x,y)=>x.dataset.start.localeCompare(y.dataset.start));
   const pastTrips = trips.filter(el => el.dataset.end < today).sort((x,y)=>x.dataset.start.localeCompare(y.dataset.start));
   futureTrips.forEach(el => upcoming.appendChild(el));
