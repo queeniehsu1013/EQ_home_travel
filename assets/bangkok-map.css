@@ -28,3 +28,12 @@
 @media(max-width:780px){.map-layout{grid-template-columns:1fr}.map-panel{padding:14px}.map-location-list{display:grid;grid-template-columns:1fr 1fr}.map-place-button{font-size:12px}.map-window{max-width:570px;margin:auto}}
 @media(max-width:420px){.map-pin{width:30px;height:30px;border-width:2px;font-size:11px}.map-location-list{grid-template-columns:1fr}.map-canvas{min-width:0}}
 @media(prefers-reduced-motion:reduce){.map-pin{transition:none}}
+
+/* Overlay real interactive hit targets on the selected illustrated image.
+   The reference image already contains 1–9 labels and illustrations. */
+.map-illustrated .map-canvas{aspect-ratio:1147 / 1024}
+.map-illustrated .map-canvas>img{width:100%;height:100%;object-fit:fill}
+.map-illustrated .map-pin{width:clamp(24px,5vw,52px);height:clamp(24px,5vw,52px);border:2px solid transparent;background:transparent!important;color:transparent!important;box-shadow:none;transform:translate(-50%,-50%);border-radius:50%;outline-offset:2px}
+.map-illustrated .map-pin:hover,.map-illustrated .map-pin:focus-visible,.map-illustrated .map-pin.active{transform:translate(-50%,-50%) scale(1.05);border:3px solid #f9f7eb;background:rgba(188,141,204,.3)!important;outline:3px solid #8757a8;box-shadow:0 0 0 5px rgba(255,255,255,.45)}
+.map-illustrated .map-pin.dimmed{opacity:.45}
+@media(max-width:480px){.map-illustrated .map-pin{width:30px;height:30px}.map-illustrated .map-pin.active{outline-width:2px;box-shadow:0 0 0 2px rgba(255,255,255,.4)}}
