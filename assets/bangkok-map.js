@@ -2,22 +2,22 @@
 (() => {
 'use strict';
 const spots=[
- {key:'hotel',n:1,name:'Sindhorn Midtown 飯店',sub:'全程住宿・Langsuan',day:0,x:49,y:59,query:'Sindhorn Midtown Hotel Bangkok',match:['Sindhorn Midtown']},
- {key:'central',n:2,name:'CentralWorld',sub:'12/23・聖誕商圈',day:1,x:47,y:35,query:'CentralWorld Bangkok',match:['CentralWorld']},
- {key:'safari',n:3,name:'Safari World',sub:'12/24・動物園',day:2,x:82,y:26,query:'Safari World Bangkok',match:['Safari World','Safari Park','Marine Park']},
- {key:'noodle',n:4,name:'Baan Kuay Tiew 船麵',sub:'12/25・勝利紀念碑',day:3,x:48,y:20,query:'Baan Kuay Tiew Ruathong 1/7 Thanon Ratchawithi Bangkok',match:['Baan Kuay Tiew','船麵']},
- {key:'siam',n:5,name:'Siam Discovery',sub:'12/25・文創購物',day:3,x:28,y:45,query:'Siam Discovery Bangkok',match:['Siam Discovery','Siam Square']},
- {key:'diora',n:6,name:'DIORA Langsuan',sub:'12/25・媽媽按摩',day:3,x:73,y:57,query:'DIORA Langsuan 36 Soi Langsuan Bangkok',match:['DIORA']},
- {key:'one',n:7,name:'One Bangkok',sub:'12/25・聖誕市集',day:3,x:78,y:72,query:'One Bangkok',match:['One Bangkok']},
- {key:'joe',n:8,name:'Mr. Joe 脆皮豬',sub:'12/26・午餐',day:4,x:36,y:73,query:'Kuay Jab Mr Joe 313/7 Thanon Chan Bangkok',match:['Mr. Joe','Mr Joe']},
- {key:'asiatique',n:9,name:'Asiatique＋侏羅紀世界',sub:'12/26・河畔夜市',day:4,x:42,y:90,query:'Asiatique The Riverfront Bangkok',match:['Asiatique','Jurassic World']}
+ {key:'hotel',n:1,name:'Sindhorn Midtown 飯店',sub:'全程住宿・Langsuan',day:0,x:54.6,y:55.8,query:'Sindhorn Midtown Hotel Bangkok',match:['Sindhorn Midtown']},
+ {key:'central',n:2,name:'CentralWorld',sub:'12/23・聖誕商圈',day:1,x:55.2,y:36.7,query:'CentralWorld Bangkok',match:['CentralWorld']},
+ {key:'safari',n:3,name:'Safari World',sub:'12/24・動物園',day:2,x:78.3,y:21.7,query:'Safari World Bangkok',match:['Safari World','Safari Park','Marine Park']},
+ {key:'noodle',n:4,name:'Baan Kuay Tiew 船麵',sub:'12/25・勝利紀念碑',day:3,x:37.6,y:25.7,query:'Baan Kuay Tiew Ruathong 1/7 Thanon Ratchawithi Bangkok',match:['Baan Kuay Tiew','船麵']},
+ {key:'siam',n:5,name:'Siam Discovery',sub:'12/25・文創購物',day:3,x:28.2,y:39.0,query:'Siam Discovery Bangkok',match:['Siam Discovery','Siam Square']},
+ {key:'diora',n:6,name:'DIORA Langsuan',sub:'12/25・媽媽按摩',day:3,x:79.7,y:49.0,query:'DIORA Langsuan 36 Soi Langsuan Bangkok',match:['DIORA']},
+ {key:'one',n:7,name:'One Bangkok',sub:'12/25・聖誕市集',day:3,x:70.6,y:67.5,query:'One Bangkok',match:['One Bangkok']},
+ {key:'joe',n:8,name:'Mr. Joe 脆皮豬',sub:'12/26・午餐',day:4,x:32.7,y:62.9,query:'Kuay Jab Mr Joe 313/7 Thanon Chan Bangkok',match:['Mr. Joe','Mr Joe']},
+ {key:'asiatique',n:9,name:'Asiatique＋侏羅紀世界',sub:'12/26・河畔夜市',day:4,x:25.3,y:77.0,query:'Asiatique The Riverfront Bangkok',match:['Asiatique','Jurassic World']}
 ];
 const section=document.getElementById('trip-map');if(!section)return;
 const canvas=document.getElementById('map-canvas'),list=document.getElementById('map-location-list'),filters=document.getElementById('map-day-filters'),selected=document.getElementById('map-selected');
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let day=0,current='hotel';
 const locate=url=>'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(url);
-spots.forEach(p=>{const b=document.createElement('button');b.type='button';b.className='map-pin';b.dataset.key=p.key;b.setAttribute('aria-label',p.n+' '+p.name);b.textContent=p.n;b.style.left=p.x+'%';b.style.top=p.y+'%';b.addEventListener('click',()=>focus(p.key,false));canvas.appendChild(b)});
+spots.forEach(p=>{const b=document.createElement('button');b.type='button';b.className='map-pin';b.dataset.key=p.key;b.setAttribute('aria-label',p.n+' '+p.name);b.textContent='';b.title=p.n+' · '+p.name;b.style.left=p.x+'%';b.style.top=p.y+'%';b.addEventListener('click',()=>focus(p.key,false));canvas.appendChild(b)});
 function paint(){
  filters.innerHTML=[{d:0,name:'全部'},{d:1,name:'12/23'},{d:2,name:'12/24'},{d:3,name:'12/25'},{d:4,name:'12/26'}].map(p=>'<button type="button" data-day="'+p.d+'" class="'+(day===p.d?'active':'')+'" aria-pressed="'+(day===p.d)+'">'+p.name+'</button>').join('');
  filters.querySelectorAll('button').forEach(b=>b.addEventListener('click',()=>{day=Number(b.dataset.day);paint()}));
