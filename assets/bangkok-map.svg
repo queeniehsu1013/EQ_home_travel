@@ -1,56 +1,102 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1100" role="img" aria-label="曼谷家庭旅遊手繪風格示意底圖">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1100" role="img" aria-labelledby="mapTitle mapDesc">
+<title id="mapTitle">曼谷親子旅行 Illustrated Map</title><desc id="mapDesc">2026年12月23日至27日曼谷家庭旅行插畫式示意地圖，包含昭披耶河、河畔摩天輪、商圈、飯店、野生動物園。地圖並非精準地理比例。</desc>
 <defs>
-<linearGradient id="bg" x2="0" y2="1"><stop stop-color="#faf3ec"/><stop offset="1" stop-color="#f6efe1"/></linearGradient>
-<linearGradient id="river" x2="0" y2="1"><stop stop-color="#a6d9e7"/><stop offset="1" stop-color="#7dc2d6"/></linearGradient>
-<linearGradient id="tree" x2="0" y2="1"><stop stop-color="#aac9a0"/><stop offset="1" stop-color="#6a997d"/></linearGradient>
-<pattern id="street" width="95" height="88" patternUnits="userSpaceOnUse" patternTransform="rotate(-11)">
-<path d="M0 0H95M0 0V88" stroke="#e6dacb" stroke-width="15" fill="none"/>
-<path d="M0 30H95M40 0V88" stroke="#fffdf7" stroke-width="8" fill="none"/>
-</pattern>
-<filter id="shadow"><feDropShadow dx="0" dy="7" stdDeviation="8" flood-color="#5b6556" flood-opacity=".12"/></filter>
+<linearGradient id="paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fffaf1"/><stop offset=".52" stop-color="#f8eee4"/><stop offset="1" stop-color="#f5f1e7"/></linearGradient>
+<linearGradient id="river" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#b5e2ea"/><stop offset="1" stop-color="#7abdd3"/></linearGradient>
+<pattern id="dots" width="21" height="23" patternUnits="userSpaceOnUse"><circle cx="3" cy="4" r="1.2" fill="#c8bba2" opacity=".22"/></pattern>
+<filter id="softShadow" x="-50%" y="-50%" width="200%" height="200%"><feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#795b58" flood-opacity=".16"/></filter>
 </defs>
-<rect width="900" height="1100" rx="24" fill="url(#bg)"/>
-<rect x="90" y="80" width="810" height="1000" fill="url(#street)" opacity=".6"/>
-<path d="M66 -10 C210 160 38 250 105 415 S10 610 104 796 S32 985 108 1120" stroke="url(#river)" stroke-width="135" fill="none"/>
-<path d="M81 -10 C225 160 53 250 120 415 S25 610 119 796 S47 985 123 1120" stroke="#d9edf1" stroke-width="5" stroke-dasharray="18 19" opacity=".8" fill="none"/>
-<path d="M335 10 C190 185 220 345 235 435 C245 515 280 650 290 760 C320 895 250 1010 240 1100" stroke="#719c7b" stroke-width="7" fill="none"/>
-<path d="M335 10 C190 185 220 345 235 435 C245 515 280 650 290 760 C320 895 250 1010 240 1100" stroke="#f4f5dc" stroke-width="3" fill="none"/>
-<g fill="#f5fbf0" stroke="#86ac91" stroke-width="4"><circle cx="305" cy="80" r="10"/><circle cx="237" cy="315" r="10"/><circle cx="250" cy="498" r="10"/><circle cx="290" cy="760" r="10"/><circle cx="272" cy="920" r="10"/></g>
-<g opacity=".9"><path d="M430 62v95h60l-30-48-30 48h60" fill="#dbb278" stroke="#9a825c" stroke-width="4"/><path d="M430 159h64" stroke="#b69b75" stroke-width="7"/><text x="510" y="112" font-size="25" fill="#806b7a" font-family="sans-serif">勝利紀念碑</text></g>
-<g filter="url(#shadow)">
-<rect x="320" y="310" width="225" height="105" rx="9" fill="#e6d0a9" stroke="#b69777" stroke-width="3"/>
-<path d="M340 327h185v69H340z" fill="#d7e8e4"/>
-<path d="M340 350h185M340 375h185M370 327v69M406 327v69M444 327v69M480 327v69" stroke="#98b6b1" stroke-width="3"/>
-<text x="433" y="448" fill="#79586c" text-anchor="middle" font-size="24" font-family="sans-serif">CentralWorld</text>
-<rect x="185" y="420" width="132" height="145" rx="6" fill="#c8d9d8" stroke="#9eaca9" stroke-width="3"/>
-<path d="M210 423v137M240 423v137M270 423v137M300 423v137M185 455h130M185 485h130M185 515h130" stroke="#fffaf5" stroke-width="4"/>
-<text x="250" y="590" fill="#79586c" text-anchor="middle" font-size="21" font-family="sans-serif">SIAM</text>
-<rect x="342" y="530" width="210" height="172" rx="9" fill="#e6d9be" stroke="#b3a184" stroke-width="4"/>
-<path d="M360 552h175v105H360z" fill="#b7d1c6"/>
-<path d="M382 552v105M418 552v105M454 552v105M490 552v105M360 590h175M360 630h175" stroke="#f8f4e8" stroke-width="5"/>
-<rect x="366" y="661" width="160" height="28" rx="7" fill="#6b8b75"/>
-<text x="446" y="681" font-size="17" font-family="sans-serif" text-anchor="middle" fill="#fff">Sindhorn Midtown</text>
-<rect x="607" y="747" width="54" height="152" fill="#abc8ce"/><rect x="672" y="692" width="62" height="208" fill="#d5c4df"/><rect x="738" y="775" width="57" height="125" fill="#b2c8bb"/>
-<path d="M607 782h54M607 816h54M607 850h54M672 730h62M672 767h62M672 803h62M672 841h62M738 820h57M738 864h57" stroke="#f1f8f2" stroke-width="5"/>
+<rect width="900" height="1100" rx="24" fill="url(#paper)"/>
+<rect x="0" y="0" width="900" height="1100" fill="url(#dots)"/>
+<path d="M75-40C205 110-8 240 94 399S10 635 88 780C168 940 85 1015 145 1145" stroke="url(#river)" stroke-width="142" fill="none"/>
+<path d="M90-40C220 110 7 240 109 399S25 635 103 780C183 940 100 1015 160 1145" stroke="#e2f8f6" stroke-width="6" stroke-dasharray="22 20" fill="none" opacity=".6"/>
+<g><path d="M210 80 Q410 170 660 140 T910 260" stroke="#fffef8" stroke-width="29" stroke-linecap="round" fill="none" opacity=".97"/><path d="M210 80 Q410 170 660 140 T910 260" stroke="#e2d3c0" stroke-width="1.8" stroke-linecap="round" fill="none" stroke-dasharray="8 21"/><path d="M230 310 Q470 250 890 345" stroke="#fffef8" stroke-width="29" stroke-linecap="round" fill="none" opacity=".97"/><path d="M230 310 Q470 250 890 345" stroke="#e2d3c0" stroke-width="1.8" stroke-linecap="round" fill="none" stroke-dasharray="8 21"/><path d="M185 470 Q460 425 900 535" stroke="#fffef8" stroke-width="29" stroke-linecap="round" fill="none" opacity=".97"/><path d="M185 470 Q460 425 900 535" stroke="#e2d3c0" stroke-width="1.8" stroke-linecap="round" fill="none" stroke-dasharray="8 21"/><path d="M160 675 Q410 595 885 720" stroke="#fffef8" stroke-width="29" stroke-linecap="round" fill="none" opacity=".97"/><path d="M160 675 Q410 595 885 720" stroke="#e2d3c0" stroke-width="1.8" stroke-linecap="round" fill="none" stroke-dasharray="8 21"/><path d="M145 840 Q450 785 880 960" stroke="#fffef8" stroke-width="29" stroke-linecap="round" fill="none" opacity=".97"/><path d="M145 840 Q450 785 880 960" stroke="#e2d3c0" stroke-width="1.8" stroke-linecap="round" fill="none" stroke-dasharray="8 21"/><path d="M355 50 Q330 270 360 515 T400 1080" stroke="#fffef8" stroke-width="29" stroke-linecap="round" fill="none" opacity=".97"/><path d="M355 50 Q330 270 360 515 T400 1080" stroke="#e2d3c0" stroke-width="1.8" stroke-linecap="round" fill="none" stroke-dasharray="8 21"/><path d="M540 60 Q515 250 565 520 T575 1100" stroke="#fffef8" stroke-width="29" stroke-linecap="round" fill="none" opacity=".97"/><path d="M540 60 Q515 250 565 520 T575 1100" stroke="#e2d3c0" stroke-width="1.8" stroke-linecap="round" fill="none" stroke-dasharray="8 21"/><path d="M755 100 Q700 280 760 480 T755 1080" stroke="#fffef8" stroke-width="29" stroke-linecap="round" fill="none" opacity=".97"/><path d="M755 100 Q700 280 760 480 T755 1080" stroke="#e2d3c0" stroke-width="1.8" stroke-linecap="round" fill="none" stroke-dasharray="8 21"/></g>
+<g><g opacity=".82"><rect x="295" y="325" width="38" height="55" rx="5" fill="#c5d9dc" stroke="#a7b7ae" stroke-width="2"/><path d="M305 335v35m10-35v35m-20 28h18" stroke="#f7f4ed" stroke-width="4"/></g><g opacity=".82"><rect x="380" y="307" width="52" height="68" rx="5" fill="#dfc8bb" stroke="#a7b7ae" stroke-width="2"/><path d="M390 317v48m10-48v48m-20 34h32" stroke="#f7f4ed" stroke-width="4"/></g><g opacity=".82"><rect x="488" y="335" width="44" height="40" rx="5" fill="#d8d0df" stroke="#a7b7ae" stroke-width="2"/><path d="M498 345v20m10-20v20m-20 20h24" stroke="#f7f4ed" stroke-width="4"/></g><g opacity=".82"><rect x="170" y="410" width="38" height="85" rx="5" fill="#c5d9dc" stroke="#a7b7ae" stroke-width="2"/><path d="M180 420v65m10-65v65m-20 43h18" stroke="#f7f4ed" stroke-width="4"/></g><g opacity=".82"><rect x="260" y="533" width="44" height="65" rx="5" fill="#dfc8bb" stroke="#a7b7ae" stroke-width="2"/><path d="M270 543v45m10-45v45m-20 33h24" stroke="#f7f4ed" stroke-width="4"/></g><g opacity=".82"><rect x="418" y="493" width="40" height="58" rx="5" fill="#d8d0df" stroke="#a7b7ae" stroke-width="2"/><path d="M428 503v38m10-38v38m-20 29h20" stroke="#f7f4ed" stroke-width="4"/></g><g opacity=".82"><rect x="470" y="697" width="40" height="60" rx="5" fill="#c5d9dc" stroke="#a7b7ae" stroke-width="2"/><path d="M480 707v40m10-40v40m-20 30h20" stroke="#f7f4ed" stroke-width="4"/></g><g opacity=".82"><rect x="650" y="684" width="42" height="67" rx="5" fill="#dfc8bb" stroke="#a7b7ae" stroke-width="2"/><path d="M660 694v47m10-47v47m-20 34h22" stroke="#f7f4ed" stroke-width="4"/></g><g opacity=".82"><rect x="760" y="738" width="54" height="79" rx="5" fill="#d8d0df" stroke="#a7b7ae" stroke-width="2"/><path d="M770 748v59m10-59v59m-20 40h34" stroke="#f7f4ed" stroke-width="4"/></g><g opacity=".82"><rect x="590" y="895" width="48" height="64" rx="5" fill="#c5d9dc" stroke="#a7b7ae" stroke-width="2"/><path d="M600 905v44m10-44v44m-20 32h28" stroke="#f7f4ed" stroke-width="4"/></g></g>
+<path d="M320 90Q240 280 288 470T300 905" fill="none" stroke="#719b7b" stroke-width="9" stroke-linecap="round"/>
+<path d="M320 90Q240 280 288 470T300 905" fill="none" stroke="#f0f4dc" stroke-width="3"/>
+<g fill="#f5fbf4" stroke="#83a48b" stroke-width="4"><circle cx="295" cy="215" r="10"/><circle cx="270" cy="383" r="10"/><circle cx="290" cy="570" r="10"/><circle cx="306" cy="770" r="10"/></g>
+<g><g transform="translate(120 190) rotate(-14)" opacity=".9"><path d="M0 24v-35" stroke="#a88269" stroke-width="5" stroke-linecap="round"/><ellipse cx="-12" cy="-9" rx="19" ry="21" fill="#bcd1a4"/><ellipse cx="11" cy="-17" rx="21" ry="22" fill="#9bc4aa"/><circle cx="0" cy="-28" r="15" fill="#bdd29b"/></g><g transform="translate(160 260) rotate(-7)" opacity=".9"><path d="M0 24v-35" stroke="#a88269" stroke-width="5" stroke-linecap="round"/><ellipse cx="-12" cy="-9" rx="19" ry="21" fill="#8eaf8e"/><ellipse cx="11" cy="-17" rx="21" ry="22" fill="#a3be8e"/><circle cx="0" cy="-28" r="15" fill="#bdd29b"/></g><g transform="translate(280 90) rotate(0)" opacity=".9"><path d="M0 24v-35" stroke="#a88269" stroke-width="5" stroke-linecap="round"/><ellipse cx="-12" cy="-9" rx="19" ry="21" fill="#d2d3a2"/><ellipse cx="11" cy="-17" rx="21" ry="22" fill="#9bc4aa"/><circle cx="0" cy="-28" r="15" fill="#bdd29b"/></g><g transform="translate(360 165) rotate(7)" opacity=".9"><path d="M0 24v-35" stroke="#a88269" stroke-width="5" stroke-linecap="round"/><ellipse cx="-12" cy="-9" rx="19" ry="21" fill="#bcd1a4"/><ellipse cx="11" cy="-17" rx="21" ry="22" fill="#a3be8e"/><circle cx="0" cy="-28" r="15" fill="#bdd29b"/></g><g transform="translate(560 120) rotate(14)" opacity=".9"><path d="M0 24v-35" stroke="#a88269" stroke-width="5" stroke-linecap="round"/><ellipse cx="-12" cy="-9" rx="19" ry="21" fill="#8eaf8e"/><ellipse cx="11" cy="-17" rx="21" ry="22" fill="#9bc4aa"/><circle cx="0" cy="-28" r="15" fill="#bdd29b"/></g><g transform="translate(620 255) rotate(-14)" opacity=".9"><path d="M0 24v-35" stroke="#a88269" stroke-width="5" stroke-linecap="round"/><ellipse cx="-12" cy="-9" rx="19" ry="21" fill="#d2d3a2"/><ellipse cx="11" cy="-17" rx="21" ry="22" fill="#a3be8e"/><circle cx="0" cy="-28" r="15" fill="#bdd29b"/></g><g transform="translate(690 110) rotate(-7)" opacity=".9"><path d="M0 24v-35" stroke="#a88269" stroke-width="5" stroke-linecap="round"/><ellipse cx="-12" cy="-9" rx="19" ry="21" fill="#bcd1a4"/><ellipse cx="11" cy="-17" rx="21" ry="22" fill="#9bc4aa"/><circle cx="0" cy="-28" r="15" fill="#bdd29b"/></g><g transform="translate(810 155) rotate(0)" opacity=".9"><path d="M0 24v-35" stroke="#a88269" stroke-width="5" stroke-linecap="round"/><ellipse cx="-12" cy="-9" rx="19" ry="21" fill="#8eaf8e"/><ellipse cx="11" cy="-17" rx="21" ry="22" fill="#a3be8e"/><circle cx="0" cy="-28" r="15" fill="#bdd29b"/></g><g transform="translate(850 440) rotate(7)" opacity=".9"><path d="M0 24v-35" stroke="#a88269" stroke-width="5" stroke-linecap="round"/><ellipse cx="-12" cy="-9" rx="19" ry="21" fill="#d2d3a2"/><ellipse cx="11" cy="-17" rx="21" ry="22" fill="#9bc4aa"/><circle cx="0" cy="-28" r="15" fill="#bdd29b"/></g><g transform="translate(730 495) rotate(14)" opacity=".9"><path d="M0 24v-35" stroke="#a88269" stroke-width="5" stroke-linecap="round"/><ellipse cx="-12" cy="-9" rx="19" ry="21" fill="#bcd1a4"/><ellipse cx="11" cy="-17" rx="21" ry="22" fill="#a3be8e"/><circle cx="0" cy="-28" r="15" fill="#bdd29b"/></g><g transform="translate(510 490) rotate(-14)" opacity=".9"><path d="M0 24v-35" stroke="#a88269" stroke-width="5" stroke-linecap="round"/><ellipse cx="-12" cy="-9" rx="19" ry="21" fill="#8eaf8e"/><ellipse cx="11" cy="-17" rx="21" ry="22" fill="#9bc4aa"/><circle cx="0" cy="-28" r="15" fill="#bdd29b"/></g><g transform="translate(340 340) rotate(-7)" opacity=".9"><path d="M0 24v-35" stroke="#a88269" stroke-width="5" stroke-linecap="round"/><ellipse cx="-12" cy="-9" rx="19" ry="21" fill="#d2d3a2"/><ellipse cx="11" cy="-17" rx="21" ry="22" fill="#a3be8e"/><circle cx="0" cy="-28" r="15" fill="#bdd29b"/></g><g transform="translate(167 590) rotate(0)" opacity=".9"><path d="M0 24v-35" stroke="#a88269" stroke-width="5" stroke-linecap="round"/><ellipse cx="-12" cy="-9" rx="19" ry="21" fill="#bcd1a4"/><ellipse cx="11" cy="-17" rx="21" ry="22" fill="#9bc4aa"/><circle cx="0" cy="-28" r="15" fill="#bdd29b"/></g><g transform="translate(290 630) rotate(7)" opacity=".9"><path d="M0 24v-35" stroke="#a88269" stroke-width="5" stroke-linecap="round"/><ellipse cx="-12" cy="-9" rx="19" ry="21" fill="#8eaf8e"/><ellipse cx="11" cy="-17" rx="21" ry="22" fill="#a3be8e"/><circle cx="0" cy="-28" r="15" fill="#bdd29b"/></g><g transform="translate(565 730) rotate(14)" opacity=".9"><path d="M0 24v-35" stroke="#a88269" stroke-width="5" stroke-linecap="round"/><ellipse cx="-12" cy="-9" rx="19" ry="21" fill="#d2d3a2"/><ellipse cx="11" cy="-17" rx="21" ry="22" fill="#9bc4aa"/><circle cx="0" cy="-28" r="15" fill="#bdd29b"/></g><g transform="translate(815 890) rotate(-14)" opacity=".9"><path d="M0 24v-35" stroke="#a88269" stroke-width="5" stroke-linecap="round"/><ellipse cx="-12" cy="-9" rx="19" ry="21" fill="#bcd1a4"/><ellipse cx="11" cy="-17" rx="21" ry="22" fill="#a3be8e"/><circle cx="0" cy="-28" r="15" fill="#bdd29b"/></g><g transform="translate(520 970) rotate(-7)" opacity=".9"><path d="M0 24v-35" stroke="#a88269" stroke-width="5" stroke-linecap="round"/><ellipse cx="-12" cy="-9" rx="19" ry="21" fill="#8eaf8e"/><ellipse cx="11" cy="-17" rx="21" ry="22" fill="#9bc4aa"/><circle cx="0" cy="-28" r="15" fill="#bdd29b"/></g><g transform="translate(390 1010) rotate(0)" opacity=".9"><path d="M0 24v-35" stroke="#a88269" stroke-width="5" stroke-linecap="round"/><ellipse cx="-12" cy="-9" rx="19" ry="21" fill="#d2d3a2"/><ellipse cx="11" cy="-17" rx="21" ry="22" fill="#a3be8e"/><circle cx="0" cy="-28" r="15" fill="#bdd29b"/></g><g transform="translate(725 1015) rotate(7)" opacity=".9"><path d="M0 24v-35" stroke="#a88269" stroke-width="5" stroke-linecap="round"/><ellipse cx="-12" cy="-9" rx="19" ry="21" fill="#bcd1a4"/><ellipse cx="11" cy="-17" rx="21" ry="22" fill="#9bc4aa"/><circle cx="0" cy="-28" r="15" fill="#bdd29b"/></g><g transform="translate(78 720) rotate(14)" opacity=".9"><path d="M0 24v-35" stroke="#a88269" stroke-width="5" stroke-linecap="round"/><ellipse cx="-12" cy="-9" rx="19" ry="21" fill="#8eaf8e"/><ellipse cx="11" cy="-17" rx="21" ry="22" fill="#a3be8e"/><circle cx="0" cy="-28" r="15" fill="#bdd29b"/></g><g transform="translate(550 320) rotate(-14)" opacity=".9"><path d="M0 24v-35" stroke="#a88269" stroke-width="5" stroke-linecap="round"/><ellipse cx="-12" cy="-9" rx="19" ry="21" fill="#d2d3a2"/><ellipse cx="11" cy="-17" rx="21" ry="22" fill="#9bc4aa"/><circle cx="0" cy="-28" r="15" fill="#bdd29b"/></g><g transform="translate(100 940) rotate(-7)" opacity=".9"><path d="M0 24v-35" stroke="#a88269" stroke-width="5" stroke-linecap="round"/><ellipse cx="-12" cy="-9" rx="19" ry="21" fill="#bcd1a4"/><ellipse cx="11" cy="-17" rx="21" ry="22" fill="#a3be8e"/><circle cx="0" cy="-28" r="15" fill="#bdd29b"/></g></g>
+<!-- Title and ornamental border -->
+<rect x="15" y="15" width="870" height="1070" rx="22" fill="none" stroke="#e5c5ce" stroke-width="3" stroke-dasharray="9 9"/>
+<rect x="192" y="18" width="512" height="111" rx="52" fill="#fff7ef" stroke="#e6c6cc" stroke-width="3" filter="url(#softShadow)"/>
+<text x="450" y="64" text-anchor="middle" font-size="51" font-family="Georgia,serif" font-style="italic" fill="#6a465c">Bangkok</text>
+<text x="450" y="100" text-anchor="middle" font-size="25" font-family="sans-serif" letter-spacing="6" fill="#79536c">曼谷旅行地圖</text>
+<text x="450" y="147" text-anchor="middle" font-size="17" font-family="sans-serif" letter-spacing="3" fill="#8f718d">2026 · DEC 23—27  ♡  EQ HOME TRAVEL</text>
+<!-- Victory monument -->
+<g transform="translate(432 224)" stroke="#b09268" stroke-width="3" fill="#d6b985"><path d="M0-44L9-10H21V23H-21V-10H-9Z"/><path d="M0-75L-5-44H5Z" fill="#b69c78"/><path d="M-27 25H27" stroke-width="6"/></g>
+<text x="435" y="284" font-size="17" fill="#856a77" font-family="sans-serif" text-anchor="middle">Victory Monument</text>
+<!-- Christmas Central World -->
+<g transform="translate(424 393)" filter="url(#softShadow)">
+<rect x="-88" y="-70" width="176" height="104" rx="7" fill="#c4d8df" stroke="#9baeb6" stroke-width="4"/>
+<path d="M-75-53H75M-75-26H75M-75 0H75M-43-69V34M-9-69V34M26-69V34M59-69V34" stroke="#f9fbf7" stroke-width="5"/>
+<rect x="-94" y="27" width="190" height="26" rx="4" fill="#e6ba9d"/>
+<text x="1" y="44" font-family="sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#724f61">centralwOrld</text>
+<path d="M93 37l25-70 25 70Z" fill="#628c72"/><path d="M104 3h28" stroke="#dbb27a" stroke-width="5"/><circle cx="118" cy="-38" r="8" fill="#e2bd5b"/>
 </g>
-<g font-family="sans-serif" fill="#61816b" opacity=".8">
-<text x="125" y="190" font-size="36" transform="rotate(-90 125 190)">昭披耶河</text>
-<text x="340" y="250" font-size="18">Siam / Chit Lom</text>
-<text x="610" y="945" font-size="21">One Bangkok</text>
+<!-- Siam designer stores -->
+<g transform="translate(241 513)" filter="url(#softShadow)">
+<rect x="-80" y="-49" width="145" height="101" rx="5" fill="#d4bfae" stroke="#b39c97" stroke-width="4"/>
+<path d="M-70 -36H52V29H-70Z" fill="#b5c9c9"/><path d="M-35-36V30M0-36V30M34-36V30M-70-3H52" stroke="#f4f3ea" stroke-width="4"/>
+<rect x="-83" y="34" width="150" height="25" fill="#ac868d"/><text x="-8" y="51" text-anchor="middle" font-size="18" font-family="sans-serif" fill="#fffaf2">SIAM</text>
+<path d="M77-2h40l-5 40h-31Z" fill="#b4a0c8" stroke="#9273a4" stroke-width="3"/><path d="M85-2q12-30 24 0" fill="none" stroke="#9273a4" stroke-width="4"/>
 </g>
-<g stroke="#678971" stroke-width="6" fill="url(#tree)">
-<circle cx="570" cy="465" r="25"/><circle cx="600" cy="470" r="26"/><circle cx="630" cy="467" r="23"/>
-<circle cx="325" cy="720" r="23"/><circle cx="302" cy="704" r="22"/><circle cx="565" cy="700" r="25"/>
-<circle cx="810" cy="960" r="31"/><circle cx="850" cy="960" r="27"/>
-<circle cx="385" cy="1010" r="31"/><circle cx="420" cy="1002" r="28"/>
+<!-- Hotel -->
+<g transform="translate(432 660)" filter="url(#softShadow)">
+<rect x="-83" y="-110" width="166" height="139" rx="7" fill="#dbd2c0" stroke="#b3a38c" stroke-width="4"/>
+<rect x="-68" y="-95" width="137" height="96" fill="#b1d1c4"/><path d="M-37-95V2M-3-95V2M32-95V2M-68-61H69M-68-25H69" stroke="#fff9ef" stroke-width="5"/>
+<rect x="-85" y="23" width="171" height="31" rx="8" fill="#647f6b"/><text x="0" y="43" font-size="17" font-family="sans-serif" text-anchor="middle" fill="#fff">SINDHORN MIDTOWN</text>
 </g>
-<g transform="translate(140 940)" stroke="#876b76" stroke-width="4" fill="none">
-<circle cx="0" cy="0" r="60"/><circle cx="0" cy="0" r="6" fill="#876b76"/>
-<path d="M0-60V60M-60 0H60M-42-42L42 42M42-42L-42 42"/>
-<path d="M-72 67H72" stroke-width="8"/>
+<!-- DIORA floral spa -->
+<g transform="translate(660 634)" filter="url(#softShadow)">
+<rect x="-61" y="-58" width="126" height="97" rx="15" fill="#f7e7df" stroke="#d9b9c6" stroke-width="3"/>
+<path d="M-38 7Q0-20 37 7" stroke="#b5a1cb" stroke-width="8" fill="none"/>
+<path d="M-27-12Q0-41 27-12" stroke="#8cae92" stroke-width="7" fill="none"/>
+<circle cx="0" cy="-17" r="12" fill="#e5b6c7"/><circle cx="-14" cy="-23" r="9" fill="#e9c5d1"/><circle cx="14" cy="-23" r="9" fill="#e9c5d1"/>
+<text x="0" y="31" font-size="21" text-anchor="middle" font-family="serif" fill="#79506c">DIORA</text>
 </g>
-<g transform="translate(185 1010)"><rect x="0" y="0" width="240" height="64" rx="13" fill="#c18787"/><path d="M-8 3L120 -52 248 3" fill="#d6a5a1"/><text x="120" y="35" fill="#fff9ef" font-size="24" font-family="sans-serif" text-anchor="middle">ASIATIQUE</text></g>
-<g transform="translate(656 180)"><rect width="210" height="205" rx="20" fill="#f3f6e8" stroke="#c5b6d6" stroke-width="6"/><path d="M10 147q30-50 66-13t80-5 45 6v48H10" fill="#94b88e"/><text x="105" y="40" text-anchor="middle" fill="#705a8b" font-family="sans-serif" font-size="21" font-weight="bold">SAFARI WORLD</text><text x="105" y="77" text-anchor="middle" font-size="45">🦒 🦓</text><text x="105" y="193" text-anchor="middle" fill="#7a6995" font-family="sans-serif" font-size="14">東北郊區・位置示意</text></g>
-<text x="450" y="40" text-anchor="middle" font-size="18" font-family="sans-serif" letter-spacing="4" fill="#9378a3">BANGKOK • FAMILY TRAVEL</text>
-<text x="450" y="1090" text-anchor="middle" font-size="15" font-family="sans-serif" fill="#806d88">＊景點位置僅為概念示意，不可用於實際路線導航</text>
+<!-- One Bangkok modern skyline -->
+<g transform="translate(719 809)" filter="url(#softShadow)">
+<rect x="-100" y="-105" width="55" height="123" rx="3" fill="#bcd5dc"/><rect x="-38" y="-153" width="65" height="171" rx="4" fill="#d5c6dd"/><rect x="34" y="-95" width="62" height="113" rx="4" fill="#b5cec2"/>
+<path d="M-90-83H-55M-90-54H-55M-90-25H-55M-27-121H16M-27-91H16M-27-61H16M-27-31H16M45-70H85M45-42H85M45-14H85" stroke="#f7fbf5" stroke-width="6"/>
+<path d="M-115 21H111" stroke="#749a83" stroke-width="9"/><text x="0" y="53" text-anchor="middle" font-size="20" font-family="sans-serif" fill="#756783">ONE BANGKOK</text>
+</g>
+<!-- Mr Joe crispy pork bowl -->
+<g transform="translate(326 817)" filter="url(#softShadow)">
+<ellipse cx="0" cy="24" rx="86" ry="27" fill="#fff5df" stroke="#d2a983" stroke-width="5"/>
+<path d="M-76 18Q0 91 74 18" fill="#fff2db" stroke="#d2a983" stroke-width="4"/>
+<g fill="#d58e53" stroke="#f1d4a8" stroke-width="4"><rect x="-53" y="-14" width="32" height="35" rx="5" transform="rotate(-10 -53 -14)"/><rect x="-14" y="-22" width="34" height="41" rx="5" transform="rotate(11 -14 -22)"/><rect x="26" y="-15" width="33" height="34" rx="5" transform="rotate(-7 26 -15)"/></g>
+<path d="M-35 16l15-25M2 11l12-24M32 11l12-20" stroke="#fff0cb" stroke-width="5"/>
+</g>
+<!-- Asiatique Ferris -->
+<g transform="translate(226 953)" stroke="#8f759b" stroke-width="4" fill="none">
+<circle r="74"/><circle r="9" fill="#e4b8c8"/><path d="M0-74V74M-74 0H74M-52-52L52 52M52-52L-52 52M-37-64L37 64M-64 37L64-37"/>
+<path d="M-50 81L0-5 50 81" stroke="#a88484" stroke-width="7"/>
+<g fill="#e6abc2"><circle cx="0" cy="-74" r="8"/><circle cx="74" cy="0" r="8"/><circle cx="-74" cy="0" r="8"/><circle cx="0" cy="74" r="8"/></g>
+</g>
+<g transform="translate(370 992)" filter="url(#softShadow)">
+<rect x="-104" y="-28" width="208" height="71" rx="7" fill="#c58d8f"/><path d="M-118-28L0-83 118-28" fill="#e2b3aa"/>
+<text x="0" y="1" text-anchor="middle" font-size="22" font-family="sans-serif" fill="#fffdf4">ASIATIQUE</text><text x="0" y="23" text-anchor="middle" font-size="12" font-family="sans-serif" fill="#fffdf4">THE RIVERFRONT</text>
+</g>
+<g transform="translate(492 958)" fill="#9a9d79" stroke="#61715c" stroke-width="3"><path d="M-12-22Q-55-52-48-5L-22 25 18 33 42 4Q57-14 18-18Z"/><path d="M-24-7L-40-17M-15 0L-30-5" stroke="#fff7e6" stroke-width="5"/><circle cx="17" cy="-9" r="5" fill="#fff"/><circle cx="18" cy="-9" r="2.5" fill="#334"/></g>
+<!-- Safari framed wildlife -->
+<g transform="translate(733 270)" filter="url(#softShadow)">
+<rect x="-115" y="-95" width="230" height="184" rx="20" fill="#f4f4dd" stroke="#b8a0c9" stroke-width="6"/>
+<path d="M-104 55Q-60 7-9 37T103 28V77H-104Z" fill="#a9c89d"/>
+<g stroke="#b69d68" stroke-width="5" fill="#dcbf84"><path d="M54 47V-18h16V49Z"/><ellipse cx="60" cy="-27" rx="21" ry="14"/><path d="M44-35l-6-15M65-39l9-16"/></g>
+<g transform="translate(-52 32)" fill="#f4f1e4" stroke="#4c5b54" stroke-width="3"><ellipse cx="0" cy="0" rx="32" ry="19"/><path d="M-20-15l15 30M-6-17l16 35M10-16l11 26M-30-5l14 12"/><path d="M-23 12v22M19 11v22"/></g>
+<rect x="-102" y="-81" width="201" height="33" rx="15" fill="#e7cf9d"/><text x="-1" y="-58" font-size="18" text-anchor="middle" font-weight="bold" fill="#665768" font-family="sans-serif">SAFARI WORLD</text>
+</g>
+<!-- Boat on river -->
+<g transform="translate(102 743)" filter="url(#softShadow)"><path d="M-45 6H45L26 25H-22Z" fill="#b17f68"/><rect x="-25" y="-29" width="55" height="35" rx="5" fill="#f4dbb0"/><path d="M-35-29H38L21-45H-18Z" fill="#df9a81"/></g>
+<!-- Tuk-tuk illustration -->
+<g transform="translate(730 1008)" filter="url(#softShadow)">
+<path d="M-73 4Q-45-49 4-47H46L79 4V43H-77Z" fill="#d6b45d" stroke="#6a8b80" stroke-width="6"/><path d="M-36-40L-55 8H52L34-40Z" fill="#b0dce3" stroke="#6a8b80" stroke-width="5"/><path d="M-75-35L30-44" stroke="#647972" stroke-width="8"/><circle cx="-49" cy="45" r="20" fill="#435e64" stroke="#fcf1d7" stroke-width="7"/><circle cx="48" cy="45" r="20" fill="#435e64" stroke="#fcf1d7" stroke-width="7"/>
+</g>
+<!-- Decorative flowers -->
+<g fill="#ddadc4"><circle cx="65" cy="146" r="10"/><circle cx="82" cy="129" r="10"/><circle cx="99" cy="145" r="10"/><circle cx="83" cy="160" r="10"/></g><circle cx="83" cy="144" r="7" fill="#e3bf73"/>
+<g fill="#e4b8c5"><circle cx="858" cy="617" r="10"/><circle cx="843" cy="602" r="10"/><circle cx="826" cy="619" r="10"/><circle cx="843" cy="634" r="10"/></g><circle cx="843" cy="619" r="7" fill="#e6c271"/>
+<text x="130" y="485" fill="#6d9db4" font-size="21" font-family="sans-serif" text-anchor="middle" transform="rotate(-78 130 485)">Chao Phraya River</text>
+<text x="570" y="470" fill="#846981" font-size="20" font-family="serif">Chit Lom</text>
+<text x="334" y="470" fill="#846981" font-size="20" font-family="serif">Siam</text>
+<text x="450" y="1080" fill="#8e7b8e" font-size="16" font-family="sans-serif" text-anchor="middle">✧ ILLUSTRATED MAP · SCHEMATIC · NOT FOR NAVIGATION ✧</text>
 </svg>
