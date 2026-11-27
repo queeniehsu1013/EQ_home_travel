@@ -1,0 +1,30 @@
+/* EQ Home Travel · Bangkok interactive travel map */
+.map-layout{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(290px,.8fr);gap:20px;align-items:start}
+.map-window{border-radius:23px;overflow:hidden;border:1px solid #e4d9e6;background:#fbf5ed;box-shadow:var(--shadow)}
+.map-canvas{position:relative;width:100%;aspect-ratio:900 / 1100;isolation:isolate}
+.map-canvas>img{width:100%;height:100%;display:block;object-fit:contain}
+.map-pin{position:absolute;transform:translate(-50%,-50%);width:36px;height:36px;display:grid;place-content:center;border-radius:100%;border:3px solid #fffdf8;background:#8f72ab;color:white;font-size:13px;font-weight:800;box-shadow:0 4px 11px #4b3a5140;cursor:pointer;z-index:1;transition:transform .2s,background .2s;scroll-margin:100px}
+.map-pin[data-key="hotel"]{background:#b88c45}
+.map-pin:hover,.map-pin.active{transform:translate(-50%,-50%) scale(1.35);background:#3f7654;z-index:3}
+.map-pin.active{box-shadow:0 0 0 8px #a5d8ac80,0 4px 11px #4b3a5140}
+.map-panel{background:var(--paper);border:1px solid var(--border);border-radius:20px;padding:18px}
+.map-day-filters{display:flex;gap:5px;overflow:auto;padding:5px 0 12px}
+.map-day-filters button{border:1px solid #dfd6e7;background:#f8f2fb;border-radius:24px;padding:7px 11px;font-size:12px;white-space:nowrap;color:#665579}
+.map-day-filters button.active{background:var(--forest);color:#fff;border-color:var(--forest)}
+.map-location-list{display:grid;gap:6px}
+.map-place-button{width:100%;background:transparent;border:1px solid transparent;border-radius:13px;display:flex;align-items:center;gap:11px;padding:9px;text-align:left;color:var(--ink)}
+.map-place-button:hover,.map-place-button.active{background:#f2ecf8;border-color:#e1d7ea}
+.map-place-button .map-place-number{flex:0 0 29px;height:29px;display:grid;place-items:center;border-radius:50%;background:#eadff1;color:#6b5283;font-size:12px;font-weight:800}
+.map-place-button.active .map-place-number{background:#8f72ab;color:white}
+.map-place-button small{color:var(--muted);display:block;font-size:11px}
+.map-selected{border-top:1px solid var(--border);margin-top:16px;padding-top:16px}
+.map-selected h3{font-size:18px;margin:0 0 4px}
+.map-selected p{font-size:12px;color:var(--muted);margin:0 0 10px}
+.map-selected a{display:inline-flex;border-radius:20px;background:var(--forest);color:#fff;font-size:12px;padding:8px 13px;font-weight:750}
+.map-note{font-size:12px;color:var(--muted);margin:12px 0 0}
+.map-jump{border:1px solid #d5c5e0;background:#f1e9f8;color:#5d4578;cursor:pointer;border-radius:20px;font-size:11px;padding:4px 10px;font-weight:700}
+.map-jump:hover{background:#e7dbf3}
+.map-pin.dimmed{opacity:.28}
+@media(max-width:780px){.map-layout{grid-template-columns:1fr}.map-panel{padding:14px}.map-location-list{display:grid;grid-template-columns:1fr 1fr}.map-place-button{font-size:12px}.map-window{max-width:570px;margin:auto}}
+@media(max-width:420px){.map-pin{width:30px;height:30px;border-width:2px;font-size:11px}.map-location-list{grid-template-columns:1fr}.map-canvas{min-width:0}}
+@media(prefers-reduced-motion:reduce){.map-pin{transition:none}}

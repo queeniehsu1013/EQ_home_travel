@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1100" role="img" aria-label="曼谷家庭旅遊手繪風格示意底圖">
+<defs>
+<linearGradient id="bg" x2="0" y2="1"><stop stop-color="#faf3ec"/><stop offset="1" stop-color="#f6efe1"/></linearGradient>
+<linearGradient id="river" x2="0" y2="1"><stop stop-color="#a6d9e7"/><stop offset="1" stop-color="#7dc2d6"/></linearGradient>
+<linearGradient id="tree" x2="0" y2="1"><stop stop-color="#aac9a0"/><stop offset="1" stop-color="#6a997d"/></linearGradient>
+<pattern id="street" width="95" height="88" patternUnits="userSpaceOnUse" patternTransform="rotate(-11)">
+<path d="M0 0H95M0 0V88" stroke="#e6dacb" stroke-width="15" fill="none"/>
+<path d="M0 30H95M40 0V88" stroke="#fffdf7" stroke-width="8" fill="none"/>
+</pattern>
+<filter id="shadow"><feDropShadow dx="0" dy="7" stdDeviation="8" flood-color="#5b6556" flood-opacity=".12"/></filter>
+</defs>
+<rect width="900" height="1100" rx="24" fill="url(#bg)"/>
+<rect x="90" y="80" width="810" height="1000" fill="url(#street)" opacity=".6"/>
+<path d="M66 -10 C210 160 38 250 105 415 S10 610 104 796 S32 985 108 1120" stroke="url(#river)" stroke-width="135" fill="none"/>
+<path d="M81 -10 C225 160 53 250 120 415 S25 610 119 796 S47 985 123 1120" stroke="#d9edf1" stroke-width="5" stroke-dasharray="18 19" opacity=".8" fill="none"/>
+<path d="M335 10 C190 185 220 345 235 435 C245 515 280 650 290 760 C320 895 250 1010 240 1100" stroke="#719c7b" stroke-width="7" fill="none"/>
+<path d="M335 10 C190 185 220 345 235 435 C245 515 280 650 290 760 C320 895 250 1010 240 1100" stroke="#f4f5dc" stroke-width="3" fill="none"/>
+<g fill="#f5fbf0" stroke="#86ac91" stroke-width="4"><circle cx="305" cy="80" r="10"/><circle cx="237" cy="315" r="10"/><circle cx="250" cy="498" r="10"/><circle cx="290" cy="760" r="10"/><circle cx="272" cy="920" r="10"/></g>
+<g opacity=".9"><path d="M430 62v95h60l-30-48-30 48h60" fill="#dbb278" stroke="#9a825c" stroke-width="4"/><path d="M430 159h64" stroke="#b69b75" stroke-width="7"/><text x="510" y="112" font-size="25" fill="#806b7a" font-family="sans-serif">勝利紀念碑</text></g>
+<g filter="url(#shadow)">
+<rect x="320" y="310" width="225" height="105" rx="9" fill="#e6d0a9" stroke="#b69777" stroke-width="3"/>
+<path d="M340 327h185v69H340z" fill="#d7e8e4"/>
+<path d="M340 350h185M340 375h185M370 327v69M406 327v69M444 327v69M480 327v69" stroke="#98b6b1" stroke-width="3"/>
+<text x="433" y="448" fill="#79586c" text-anchor="middle" font-size="24" font-family="sans-serif">CentralWorld</text>
+<rect x="185" y="420" width="132" height="145" rx="6" fill="#c8d9d8" stroke="#9eaca9" stroke-width="3"/>
+<path d="M210 423v137M240 423v137M270 423v137M300 423v137M185 455h130M185 485h130M185 515h130" stroke="#fffaf5" stroke-width="4"/>
+<text x="250" y="590" fill="#79586c" text-anchor="middle" font-size="21" font-family="sans-serif">SIAM</text>
+<rect x="342" y="530" width="210" height="172" rx="9" fill="#e6d9be" stroke="#b3a184" stroke-width="4"/>
+<path d="M360 552h175v105H360z" fill="#b7d1c6"/>
+<path d="M382 552v105M418 552v105M454 552v105M490 552v105M360 590h175M360 630h175" stroke="#f8f4e8" stroke-width="5"/>
+<rect x="366" y="661" width="160" height="28" rx="7" fill="#6b8b75"/>
+<text x="446" y="681" font-size="17" font-family="sans-serif" text-anchor="middle" fill="#fff">Sindhorn Midtown</text>
+<rect x="607" y="747" width="54" height="152" fill="#abc8ce"/><rect x="672" y="692" width="62" height="208" fill="#d5c4df"/><rect x="738" y="775" width="57" height="125" fill="#b2c8bb"/>
+<path d="M607 782h54M607 816h54M607 850h54M672 730h62M672 767h62M672 803h62M672 841h62M738 820h57M738 864h57" stroke="#f1f8f2" stroke-width="5"/>
+</g>
+<g font-family="sans-serif" fill="#61816b" opacity=".8">
+<text x="125" y="190" font-size="36" transform="rotate(-90 125 190)">昭披耶河</text>
+<text x="340" y="250" font-size="18">Siam / Chit Lom</text>
+<text x="610" y="945" font-size="21">One Bangkok</text>
+</g>
+<g stroke="#678971" stroke-width="6" fill="url(#tree)">
+<circle cx="570" cy="465" r="25"/><circle cx="600" cy="470" r="26"/><circle cx="630" cy="467" r="23"/>
+<circle cx="325" cy="720" r="23"/><circle cx="302" cy="704" r="22"/><circle cx="565" cy="700" r="25"/>
+<circle cx="810" cy="960" r="31"/><circle cx="850" cy="960" r="27"/>
+<circle cx="385" cy="1010" r="31"/><circle cx="420" cy="1002" r="28"/>
+</g>
+<g transform="translate(140 940)" stroke="#876b76" stroke-width="4" fill="none">
+<circle cx="0" cy="0" r="60"/><circle cx="0" cy="0" r="6" fill="#876b76"/>
+<path d="M0-60V60M-60 0H60M-42-42L42 42M42-42L-42 42"/>
+<path d="M-72 67H72" stroke-width="8"/>
+</g>
+<g transform="translate(185 1010)"><rect x="0" y="0" width="240" height="64" rx="13" fill="#c18787"/><path d="M-8 3L120 -52 248 3" fill="#d6a5a1"/><text x="120" y="35" fill="#fff9ef" font-size="24" font-family="sans-serif" text-anchor="middle">ASIATIQUE</text></g>
+<g transform="translate(656 180)"><rect width="210" height="205" rx="20" fill="#f3f6e8" stroke="#c5b6d6" stroke-width="6"/><path d="M10 147q30-50 66-13t80-5 45 6v48H10" fill="#94b88e"/><text x="105" y="40" text-anchor="middle" fill="#705a8b" font-family="sans-serif" font-size="21" font-weight="bold">SAFARI WORLD</text><text x="105" y="77" text-anchor="middle" font-size="45">🦒 🦓</text><text x="105" y="193" text-anchor="middle" fill="#7a6995" font-family="sans-serif" font-size="14">東北郊區・位置示意</text></g>
+<text x="450" y="40" text-anchor="middle" font-size="18" font-family="sans-serif" letter-spacing="4" fill="#9378a3">BANGKOK • FAMILY TRAVEL</text>
+<text x="450" y="1090" text-anchor="middle" font-size="15" font-family="sans-serif" fill="#806d88">＊景點位置僅為概念示意，不可用於實際路線導航</text>
+</svg>
