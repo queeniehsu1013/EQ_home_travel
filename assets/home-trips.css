@@ -1,0 +1,9 @@
+/* Homepage only · future travels first, memories underneath */
+.trip-group{margin-top:34px}
+.trip-group+.trip-group{margin-top:54px;padding-top:28px;border-top:1px solid var(--border)}
+.trip-group-head{align-items:end;margin-bottom:20px}
+.trip-group-head h2{font-size:clamp(26px,3.4vw,34px);margin:6px 0 0}
+.trip-card-list{display:grid;gap:20px}
+.trip-card-list:empty{display:none}
+.group-empty{padding:24px 20px;background:var(--paper);border:1px dashed #c7d6c9;border-radius:19px;color:var(--sage);font-size:14px}
+@media(max-width:520px){.trip-group{margin-top:28px}.trip-group+.trip-group{margin-top:38px;padding-top:20px}.trip-group-head h2{font-size:25px}.trip-group-head .count-pill{font-size:10px}}
